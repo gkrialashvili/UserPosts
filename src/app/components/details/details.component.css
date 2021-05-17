@@ -1,0 +1,37 @@
+h1 {
+  font: 150%/150% "Freckle Face", cursive;
+}
+
+button {
+  color: #444444;
+  background: #f3f3f3;
+  border: 1px #dadada solid;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 9pt;
+  outline: none;
+}
+
+button.blue {
+  color: white;
+  background: #4c8ffb;
+  border: 1px #3079ed solid;
+  box-shadow: inset 0 1px 0 #80b0fb;
+}
+
+button.blue:hover {
+  border: 1px #2f5bb7 solid;
+  box-shadow: 0 1px 1px #eaeaea, inset 0 1px 0 #5a94f1;
+  background: #3f83f1;
+}
+
+button.blue:active {
+  box-shadow: inset 0 2px 5px #2370fe;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font: 150%/150% "Freckle Face", cursive;
+}

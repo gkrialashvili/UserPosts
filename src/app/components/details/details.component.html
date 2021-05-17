@@ -1,9 +1,13 @@
-<div *ngIf="user$">
-  <h1>{{user$.name}}</h1>
-  
+<div *ngIf="users">
+  <h1>{{users.name}}</h1>
+
   <ul>
-    <li><strong>Username:</strong> {{user$.username}}</li>
-    <li><strong>Email:</strong> {{user$.email}}</li>
-    <li><strong>Phone:</strong> {{user$.phone}}</li>
+    <li><strong>Username:</strong> {{users.username}}</li>
+    <li><strong>Email:</strong> {{users.email}}</li>
+    <li><strong>Phone:</strong> {{users.phone}}</li>
   </ul>
-  </div>
+  <h1>Blue Google Button</h1>
+  <button class="blue"><a [routerLink]="['/posts']" [queryParams]="{userId: users.id}">Posts</a></button>
+
+
+</div>
